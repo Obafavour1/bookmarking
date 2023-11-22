@@ -17,9 +17,6 @@ body{
 .main-container{
     margin: auto;
     max-width: 1440px;
-    
-    
-    
 }
 
 /* utilities */
@@ -171,7 +168,7 @@ nav{
     margin-top: 150px;
 }
 
-.img-div{
+.image-div{
     height: 300px;
     background-color: hsl(231, 69%, 60%);
     width: 450px;

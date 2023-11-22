@@ -48,8 +48,7 @@ $(document).ready( function(){
     $('#login-email').keyup(function(){
         var regxEmail = /^([a-zA-Z]+)([0-9]+)?(@)([a-zA-Z]{5,10}(.)([a-zA-Z]+))$/i;
 
-        var emailInput = $(this).val()
-        var NoTing = emailInput.text('')
+        var emailInput = $(this).val();
         if(regxEmail.test(emailInput)){
             $('.emailStatus').text('valid')
             $('.emailStatus').css('color', 'green')
@@ -92,6 +91,7 @@ $(document).ready( function(){
         }
     });
 
+    $('.menu').hide()
     $('#checkbox').click(function(){
         $('.menu').slideToggle(500);
         $('.open, .nav-logo').hide();

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bookmark</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut" href="image/favicon-32x32.png">
+    <link rel="shortcut icon" href="image/favicon-32x32.png">
     <link rel="stylesheet" href="css/mobile.css">
     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/main.js"></script>
@@ -33,14 +33,13 @@
                 <li><a href="#feature">FEATURES</a></li>
                 <li><a href="">PRICING</a></li>
                 <li><a href="#contact">CONTACT</a></li>
-                
             </ul>
-            <li><a class="menu-login" href="/login.html">LOGIN</a></li>
+            <a class="menu-login" href="/login.html">LOGIN</a>
         </div>
 
         <!-- showcase section -->
         <section id="showcase">
-            <div class="showcase-text">
+            <div class="showcase-text hidden">
                 <h1> A Simple Bookmark Manager</h1>
                 <p>A clean and simple interface to organize your favourite websites.
                     Open a new browser tab and see your site load instanly. Try it for fee.
@@ -56,17 +55,17 @@
             </div>
         </section>
 
-        <section id="feature">
-            <div class="upper-feature">
+        <section id="feature" >
+            <div class="upper-feature hidden">
                 <h2>Features</h2>
                 <p>Our aim is to make quick and easy for you to access your favourite websites. Your bookmarks
                     sync between your devices so you can access them on the go.
                 </p>
             </div>
             <div class="middle-feature">
-                <p class="simple">Simple Bookmarking</p>
-                <p class="search">Speedy Searching</p>
-                <p>Easy Sharing</p>
+                <p class="simple mid-fit">Simple Bookmarking</p>
+                <p class="search mid-fit">Speedy Searching</p>
+                <p class="sharing mid-fit">Easy Sharing</p>
             </div>
             <div class="bookmark-feature" id="feature-book">
                 <div class="bookmark-img">
@@ -80,10 +79,10 @@
                     </p>
                     <a href="" class="more">More Info</a>
                 </div>
-            </div> -->
-            <!-- <div class="bookmark-feature" id="searching">
+            </div> 
+            <div class="bookmark-feature" id="searching">
                 <div class="bookmark-img">
-                    <img src="image/illustration-features-tab-1.svg" alt="">
+                    <img src="image/illustration-features-tab-2.svg" alt="">
                     <div class="bookmark-img-div"></div>
                 </div>
                 <div class="bookmark-text">
@@ -97,7 +96,7 @@
             </div>
             <div class="bookmark-feature" id="sharing">
                 <div class="bookmark-img">
-                    <img src="image/illustration-features-tab-1.svg" alt="">
+                    <img src="image/illustration-features-tab-3.svg" alt="">
                     <div class="bookmark-img-div"></div>
                 </div>
                 <div class="bookmark-text">
@@ -112,29 +111,29 @@
         </section>
 
         <!-- download section -->
-        <section id="download">
-            <div class="download-upper">
+        <section id="download" >
+            <div class="download-upper hidden">
                 <h2>Download the extension</h2>
                 <p>We've got more browsers in the pipeline. Please do let us know if
                     you've got a favourite you'd like us to prioritize.
                 </p>
             </div>
             <div class="download-card-section">
-                <div class="card-1 card">
+                <div class="card-1 card hidden">
                     <img src="image/logo-chrome.svg" alt="">
                     <h3>Add to Chrome</h3>
                     <p>Minimum Version 62</p>
                     <img class="card-img" src="image/bg-dots.svg" alt="">
                     <button type="button">Add & Install Extension</button>
                 </div>
-                <div class="card-2 card">
+                <div class="card-2 card hidden">
                     <img src="image/logo-firefox.svg" alt="">
                     <h3>Add to Firefox</h3>
                     <p>Minimum Version 55</p>
                     <img class="card-img" src="image/bg-dots.svg" alt="">
                     <button type="button">Add & Install Extension</button>
                 </div>
-                <div class="card-3 card">
+                <div class="card-3 card hidden">
                     <img src="image/logo-opera.svg" alt="">
                     <h3>Add to Opera</h3>
                     <p>Minimum Version 49</p>
@@ -145,7 +144,7 @@
         </section>
 
         <section id="question">
-            <div class="upper-question">
+            <div class="upper-question hidden">
                 <h2>Frequently Asked Questions</h2>
                 <p>Here are some our FAQs. If you have any other questions 
                     you'd like answered please feel free to email us.

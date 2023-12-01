@@ -8,6 +8,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Rubik', sans-serif;
     overflow-x: hidden;
@@ -16,7 +20,7 @@ body{
 
 .main-container{
     margin: auto;
-    max-width: 1440px;
+    max-width: 1540px;
 }
 
 /* utilities */
@@ -51,6 +55,19 @@ h2{
     color: hsl(229, 31%, 21%);
 }
 
+
+.hidden{
+    opacity: 0;
+    filter: blur(3px);
+    transform: translateX(-10%);
+    transition: all .5s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0%);
+}
 
 /* nav section */
 nav{
@@ -105,7 +122,7 @@ nav{
 #showcase{
     display: flex;
     justify-content: space-between;
-    min-height: 100vh;
+    max-height: 125vh;
     padding-left: 150px;
     max-width: 100vw;
 }
@@ -170,8 +187,8 @@ nav{
 
 .image-div{
     height: 300px;
-    background-color: hsl(231, 69%, 60%);
     width: 450px;
+    background-color: hsl(231, 69%, 60%);
     margin-top: 320px;
     border-radius: 0 0 0 50%;
 }
@@ -182,7 +199,6 @@ nav{
     min-height: 100vh;
     padding-bottom: 50px;
     padding-top: 50px;
-    
 }
 
 .upper-feature{
@@ -204,6 +220,7 @@ nav{
     justify-content: center;
     width: 600px;
     border-bottom: 1px solid grey;
+    cursor: pointer;
 }
 
 
@@ -212,15 +229,16 @@ nav{
     color: hsl(0, 94%, 66%);
 }
 
-.middle-feature.active p{
+/* .middle-feature.active p{
     border-bottom: 2px solid hsl(0, 94%, 66%);
-}
+} */
 
 .search{
     margin: 0 30px;
 }
 
 .bookmark-feature{
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     /* margin-bottom: 100px; */
@@ -230,7 +248,7 @@ nav{
     position: absolute;
     width: 40vw;
     margin-left: 100px;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 
 .bookmark-img-div{
@@ -264,10 +282,6 @@ nav{
 .bookmark-text p{
     margin: 30px 0;
 }
-
-/* #feature-book, #searching, #sharing{
-    display: none;
-} */
 
 /* download extension section */
 #download{
@@ -305,11 +319,11 @@ nav{
 }
 
 .card-2{
-    margin: 30px 30px 0 30px;
+    margin: 50px 30px 0 30px;
 }
 
 .card-3{
-    margin-top: 60px;
+    margin-top: 100px;
 }
 
 .card h3{
@@ -425,16 +439,16 @@ nav{
 }
 
 #email:focus{
-    border: 2px solid hsl(0, 94%, 66%);
+    border: 2px solid hsl(0, 45%, 60%);
 }
 
 .submit{
     padding: 15px;
     border-radius: 12px;
-    background-color:  hsl(0, 94%, 66%);
+    background-color:  hsl(0, 82%, 73%);
     cursor: pointer;
     margin-left: 30px;
-    border: 2px solid hsl(0, 94%, 66%);
+    border: 2px solid hsl(0, 74%, 71%);
     transition: all .3s;
 }
 
@@ -491,12 +505,23 @@ form{
     background-color: hsl(231, 69%, 60%);
 }
 
-#form-page .form-login{
-    width: 300px;
-    min-height: 400px;
+.div{
+    margin: 10px 0;
+}
+
+form{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-login{
+    width: 50vw;
+    height: 80vh;
     border-radius: 12px;
     background-color: white;
-    padding: 50px;
+    padding: 0 5%;
+    padding-top: 80px;
 }
 
 #form-page .form-login h2{
@@ -516,12 +541,10 @@ form{
     border-radius: 5px;
 }
 
-/* #emailStatus{
-    color: green;
-    width: 40vw;
-    position: absolute;
-    right: 40px;
-} */
+.emailStatus, .passStatus{
+    font-size: 14px;
+    float: right;
+}
 
 #login-email:focus, #password:focus{
     border: none;
@@ -537,6 +560,12 @@ form{
     border-radius: 5px;
 }
 
+label{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+}
+
 
 .login-btn:hover{
     background-color: white;
@@ -550,23 +579,15 @@ form{
 
 .forget-pass{
     right: 0;
-    margin-bottom: 30px;
+    font-size: 14px;
+    text-decoration: underline;
+    font-weight: 300;
 }
 
-.form-close{
-    position: absolute;
-    right: 39%;
-    top: 10%;
+.forget-pass:hover{
+    color: hsl(231, 69%, 60%);
 }
 
-
-
-
-
-
-
-
-
-
-
-
+.span-signup{
+    font-size: 15px;
+}
